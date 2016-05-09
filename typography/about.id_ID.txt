@@ -1,0 +1,33 @@
+Title: Tipografi
+Author: Taufik Nurrohman
+URL: http://latitudu.com
+Version: 1.0.0
+
+====
+
+> Konverter tanda baca pintar.
+
+Plugin ini akan mengonversi beberapa karakter tanda baca ASCII mentah menjadi entitas HTML “pintar”:
+
+ - Mengubah tanda petik biasa (`'` and `"`) menjadi entitas HTML tanda petik “keriting”
+ - Mengubah dua/tiga gabungan tanda kurang (`--` and `---`) menjadi entitas HTML ‘en-dash’ dan ‘em-dash’
+ - Mengubah tiga gabungan tanda titik (`...`) menjadi sebuah entitas HTML ‘elipsis’.
+
+Plugin ini tidak akan memodifikasi tanda baca di dalam tag `<pre>`, `<code>`, `<kbd>` atau `<script>` karena tag-tag ini pada umumnya digunakan untuk menampilkan teks dimana tanda petik pintar dan tanda baca pintar lainnya tidak akan sesuai, seperti dalam tampilan kode sumber dan contoh markup.
+
+#### Sebelum
+
+~~~ .no-highlight
+He said, "This is some text with an \'escaped quote here\'... By the way, what's your name?"
+~~~
+
+#### Sesudah
+
+~~~ .no-highlight
+He said, “This is some text with an 'escaped quote here'… By the way, what’s your name?”
+~~~
+
+*[ASCII]: American Standard Code for Information Interchange
+*[HTML]: Hyper Text Markup Language
+
+<!-- block:donate -->

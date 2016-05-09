@@ -1,0 +1,33 @@
+Title: Typography
+Author: Taufik Nurrohman
+URL: http://latitudu.com
+Version: 1.0.0
+
+====
+
+> Smart punctuation converter.
+
+This plugin will convert some plain ASCII punctuation characters into “smart” punctuation HTML entities:
+
+ - Convert straight quotes (`'` and `"`) into “curly” quote HTML entities
+ - Convert dashes (`--` and `---`) into ‘en-dash’ and ‘em-dash’ HTML entities
+ - Convert three consecutive dots (`...`) into an ‘ellipsis’ HTML entity.
+
+This plugin will not modify characters within `<pre>`, `<code>`, `<kbd>` or `<script>` tag block because these tags are commonly used to display text where smart quotes and other “smart punctuation” would not be appropriate, such as source code or example markup.
+
+#### Before
+
+~~~ .no-highlight
+He said, "Some text with \'escaped quotes\'... Hey, what's your name?"
+~~~
+
+#### After
+
+~~~ .no-highlight
+He said, “Some text with 'escaped quotes'… Hey, what’s your name?”
+~~~
+
+*[ASCII]: American Standard Code for Information Interchange
+*[HTML]: Hyper Text Markup Language
+
+<!-- block:donate -->
