@@ -21,4 +21,5 @@ Filter::add(array(
     'menu:output',
     'name',
     'title'
-), 'do_typography', 1.1); // `do_markdown` filter is on priority `1`
+// `do_parse_markdown` filter is on priority `1`
+), 'do_typography', 1.1);
