@@ -1,7 +1,7 @@
 Typography Plugin for Mecha CMS
 ===============================
 
-> Inspired by **SmartyPants** plugin created by [John Gruber](http://daringfireball.net "John Gruber’s Website").
+> Inspired by the **SmartyPants** plugin created by [John Gruber](http://daringfireball.net/projects/smartypants "John Gruber’s Website").
 
 Typography
 ----------
