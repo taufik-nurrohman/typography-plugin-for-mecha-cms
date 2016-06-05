@@ -77,7 +77,7 @@ class Typography {
         return $text;
     }
 
-    // From `'foo'` to `ëfooí` and `"bar"` to `ìbarî`
+    // From `'foo'` to `‚Äòfoo‚Äô` and `"bar"` to `‚Äúbar‚Äù`
     protected function quote($text) {
         $text = preg_replace(
             array(
@@ -97,7 +97,7 @@ class Typography {
                 $this->Q[1]
             ),
         $text);
-        // Fix for `fooîë` and `fooíì`
+        // Fix for `foo‚Äù‚Äò` and `foo‚Äô‚Äú`
         $text = str_replace(
             array(
                 $this->Q[1] . $this->q[0],
@@ -112,7 +112,7 @@ class Typography {
         return str_replace(array("'", '"'), array($this->q[1], $this->Q[1]), $text);
     }
 
-    // From `--` to `ñ` and `---` to `ó`
+    // From `--` to `‚Äì` and `---` to `‚Äî`
     protected function dash($text) {
         return str_replace(
             array(
@@ -126,7 +126,7 @@ class Typography {
         $text);
     }
 
-    // From `...` to `Ö`
+    // From `...` to `‚Ä¶`
     protected function dot($text) {
         return str_replace(
             array(
@@ -164,7 +164,7 @@ class Typography {
         $text);
     }
 
-    // Reverse conversion, e.g. from `ìfooî` to `"foo"`
+    // Reverse conversion, e.g. from `‚Äúfoo‚Äù` to `"foo"`
     public function destroy($text) {
         return str_replace(
             array(

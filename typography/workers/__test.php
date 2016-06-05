@@ -55,7 +55,7 @@ div hr {
   <body>
 <?php
 
-include __DIR__ . '/typography.php';
+include __DIR__ . '/converter.typography.php';
 
 $str = array();
 $str[] = <<<EOL

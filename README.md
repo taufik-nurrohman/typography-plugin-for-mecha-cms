@@ -17,7 +17,7 @@ This class will not modify characters within `<pre>`, `<code>`, `<kbd>` or `<scr
 #### Class Usage
 
 ~~~ .php
-require '../workers/typography.php';
+require '../workers/converter.typography.php';
 
 $parser = new Converter\Typography();
 $parser->ignore = 'pre|code'; // settings ...

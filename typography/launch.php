@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . DS . 'workers' . DS . 'typography.php';
+require __DIR__ . DS . 'workers' . DS . 'converter.typography.php';
 
 $parser = new Converter\Typography();
 
