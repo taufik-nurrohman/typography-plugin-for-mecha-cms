@@ -1,7 +1,7 @@
 Title: Tipografi
 Author: Taufik Nurrohman
 URL: http://latitudu.com
-Version: 1.0.0
+Version: 1.0.1
 
 ====
 
@@ -26,6 +26,8 @@ He said, "This is some text with an \'escaped quote here\'... By the way, what's
 ~~~ .no-highlight
 He said, “This is some text with an 'escaped quote here'… By the way, what’s your name?”
 ~~~
+
+[<i class="fa fa-terminal"></i> Tes]({{url:lot/plugins/typography/workers/__test.php}}) {.btn.btn-action target="_blank"}
 
 *[ASCII]: American Standard Code for Information Interchange
 *[HTML]: Hyper Text Markup Language

@@ -14,7 +14,9 @@ The `Converter\Typography` class will convert some plain ASCII punctuation chara
 
 This class will not modify characters within `<pre>`, `<code>`, `<kbd>` or `<script>` tag block because these tags are commonly used to display text where smart quotes and other “smart punctuation” would not be appropriate, such as source code or example markup.
 
-#### Class Usage
+---
+
+### Class Usage
 
 ~~~ .php
 require '../workers/converter.typography.php';
