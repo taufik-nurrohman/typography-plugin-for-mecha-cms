@@ -35,7 +35,7 @@ class Typography {
     public $s = array('&#32;', '&#160;');
 
     // Skip parsing process if we are in these HTML tag(s)
-    public $ignore = 'code|kbd|math|pre|script|style';
+    public $ignore = 'code|kbd|math|pre|script|style|textarea';
 
     // Run converter ...
     public function run($text) {
